@@ -1,6 +1,7 @@
 import LogoTitle from '../../assets/images/logo-s.png';
 import { Link } from 'react-router-dom';
 import './index.scss';
+import { useState } from 'react';
 
 
 
@@ -8,7 +9,9 @@ import './index.scss';
 
 
 const Home = () => {
-
+    const [letterClass, setLetter] = useState('text-animate')
+    const nameArray = ['N','i','z','a','r',' ','A','l','a','y','d','r','u','s']
+    const jobArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r']
     return(
         <div className="container home-page">
             <div className="text-zone">
